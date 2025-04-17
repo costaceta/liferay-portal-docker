@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  liferay-portal:
+    image: liferay/portal:7.4.3.132-ga132
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 8g
+    stdin_open: true
+    tty: true
